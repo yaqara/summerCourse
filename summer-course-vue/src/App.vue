@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="number" v-model="number">
-    <tableComponent :number="number"/>
+    <tableComponent :inpNum="number"/>
   </div>
 </template>
 
