@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import homePage from "@/pages/HomePage.vue"
 import createPostPage from "@/pages/CreatePostPage.vue"
 import viewPostPage from "@/pages/ViewPostPage.vue"
+import editPostPage from "@/pages/EditPostPage.vue"
 
 const routes = [
     {
@@ -10,13 +11,20 @@ const routes = [
         "props": true
     },
     {
-        "path": "/post/create",
-        "component": createPostPage
-    },
-    {
         "path": "/post/:id",
         "component": viewPostPage,
         "name": "postView",
+        "props": true
+    },
+    {
+        "path": "/post/create",
+        "name": "postCreate",
+        "component": createPostPage
+    },
+    {
+        "path": "/post/edit/:id",
+        "component": editPostPage,
+        "name": "postEdit",
         "props": true
     }
 ]
