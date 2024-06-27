@@ -24,7 +24,6 @@ export default {
     },
     methods : {
         editPost() {
-            alert("EDIT editpostpage.vue")
             this.$emit('post-edit', {
                 "title": this.title,
                 "body": this.body,
