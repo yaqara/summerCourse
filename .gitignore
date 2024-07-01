@@ -1,5 +1,5 @@
-/obj
-/bin
+obj/
+bin/
 *.sln
 .DS_Store
 node_modules
